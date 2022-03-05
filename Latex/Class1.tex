@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{xcolor}
+\definecolor{air}{rgb}{0.36,0.54,0.66}
+\title{1st Lecture on CSE 300}
+\author{Shukti}
+\date{06 July,2019}
+%preamble
+\begin{document}
+\maketitle
+\tableofcontents
+%\textit{\textbf{this is a }}line.
+
+\section{Introduction}
+today is the intro lecture.\\
+this is a newline.
+\section{Text Styling}
+Here we shall learn text styling.
+\subsection{bold}
+\textbf{This is Bold}
+\subsection{italic}
+\textit{This is Italic}
+\section{Listing}
+
+\subsection{unordered}
+\begin{itemize}
+	\item[] CSE300
+	\item[] CSE205
+\end{itemize}
+\subsection{ordered}
+\begin{enumerate}[i]
+	\item CSE300
+	\begin{itemize}
+		\item week1 Basic \LaTeX
+	\end{itemize}
+	\item CSE205
+\end{enumerate}
+see the table \ref{table:sam_tab}
+\subsection{description}
+\begin{description}
+	\item[CSE300] \textcolor{air}{Technical Writing and Presentation}
+	\item [CSE205] \textcolor{red}{Computer Architecture}
+\end{description}
+
+\section{table}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multirow{2}{*}{EEE} & CSE & ME & CE\\
+\cline{2-4}
+& & \multicolumn{2}{|c|}{\multirow{2}{*}{ARCHI}}\\
+\cline{1-2}
+\multicolumn{2}{|c|}{ME} & \multicolumn{2}{c|}{}\\
+\hline
+\end{tabular}
+\caption{sample table}
+\label{table:sam_tab}
+\end{center}
+\end{table}
+
+
+\end{document}

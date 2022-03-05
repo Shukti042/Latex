@@ -1,0 +1,81 @@
+\documentclass[letter, 12pt]{article}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{amsmath}
+ \renewcommand{\labelenumii}{\Roman{enumii}}
+
+\author{1605042}
+\date{\today}
+\title{CSE 300 Online 2}
+\begin{document}
+	\maketitle 
+	\tableofcontents
+\section{Graphics}
+Emacs, Nano, or Vim: Choose your Terminal-Based Text Editor Wisely. Nano
+is the built-in basic text editor for many popular distros. Its usually already
+contained in the distro, doesnt take any learning or getting used to, and all
+its commands and prompts are displayed at the bottom. Nano is the built-in
+basic text editor for many popular distros. Its usually already contained in the
+distro, doesnt take any learning or getting used to, and all its commands and
+prompts are displayed at the bottom. Vi or one of its variants typically comes
+with your distro-of-choice. Its considered a modal editor, which means there
+are different modes for navigating files and editing text. Because you navigate
+Vi most efficiently through the use of keyboard commands and shortcuts, Vi is
+better experienced than explained.
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.3\textwidth}
+		\includegraphics[width=0.8\textwidth]{emacslogo.png}
+		\caption{Emacs}
+	\end{subfigure}
+	\qquad %will generate gap between pictures
+	\begin{subfigure}{.3\textwidth}
+		\includegraphics[width=0.8\textwidth]{nanologo.png}
+		\caption{Nano}
+	\end{subfigure}
+	\begin{subfigure}{.3\textwidth}
+		\includegraphics[width=0.8\textwidth]{vimlogo.png}
+		\caption{Vim}
+	\end{subfigure}
+	\caption{Terminal-based text-editors}
+\end{figure}
+\section{Equation}
+In algebra, a quadratic equation is any equation having the form $ax^2 +bx+c = 0$
+where x represents an unknown, and a, b, and c represent known numbers, with
+$a\neq0$. It can easily be seen, by polynomial expansion, that the following
+equation is equivalent to the quadratic equation:
+$$\left(x+\frac{b}{2a}\right)^2=\frac{b^2-4ac}{4a^2}$$
+Taking the square root of both sides, and isolating $x$, gives:
+\begin{equation}
+	x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{equation}
+\textbf{Some Equations:}
+$$f_1(t)=\int_{3}^{5}\sin(x)dx$$
+$$F(x)=A_o+\sum_{n=1}^{N}\left[A_n\cos\left(\frac{2\pi nx}{P}\right)+B_n\sin\left(\frac{2\pi nx}{P}\right)\right]$$
+$$\lim\limits_{x \to a}\frac{f(x)-f(a)}{x-a}$$
+\begin{equation}
+\begin{bmatrix}
+a_1 & a_2 & a_3\\
+b_1 & b_2 & b_3\\
+c_1 & c_2 & c_3\\
+\end{bmatrix}
+\end{equation}
+\section{Bibliography}
+The recent success of neural networks has boosted research on pattern recog-
+nition and data mining. Many machine learning tasks such as object detection
+in “You Only Look Once” \cite{lecun1995convolutional}, machine translation \cite{hochreiter1997long}, and speech recognition
+\cite{redmon2016you}), which once heavily relied on handcrafted feature engineering to extract in-
+formative feature sets, has recently been revolutionized by various end-to-end
+deep learning paradigms, i.e., convolutional neural networks (CNNs) [3], long
+shortterm memory (LSTM) [2], and autoencoders.
+
+\bibliographystyle{plain}
+\bibliography{bibfile}
+
+\end{document}

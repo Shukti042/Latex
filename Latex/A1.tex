@@ -1,0 +1,91 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{multirow}
+%preamble
+\title{Practice on latex}
+\author{Sakshar}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+This is the basic lecture on \LaTeX.
+
+\noindent It is a new line.
+
+\section{Introduction}
+
+This is a gloomy weather. It may rain today.  for larning how to bold a text, see Section \ref{bold}. For learning table, see Table \ref{table}.
+
+\section{Styling}
+We will learn some styling here.
+
+\subsection{Bold}\label{bold}
+\textbf{This is a bold line.} This is not bold.
+
+\subsection*{Italic}
+\emph{This is a \emph{bold} line.} This is not bold.
+
+\subsection{Color}
+This line has a \textcolor{red}{colored word}.
+
+this is a backslash \textbackslash
+
+\verb|^\%lrghwhgk_+\textcolor{red}{this is nothing}|
+
+\begin{verbatim}
+ughwiughk)*(&(*)&(*&^\/
+\end{verbatim}
+
+\section{List}
+
+unordered
+
+ordered
+
+description
+
+\begin{enumerate}
+	\item mango
+	\item blackberry
+	\item rice
+\end{enumerate}
+
+\begin{enumerate}[i]
+	\item mango
+	\item blackberry
+	\item rice
+\end{enumerate}
+
+\begin{description}
+	\item[Fruit] All fruits listed below:
+	\begin{itemize}
+		\item mango
+		\item apple
+		\item coconut
+	\end{itemize}
+	\item[Phone] blackberry
+	\item[Grain] rice
+\end{description}
+
+
+\section{table}
+
+\begin{table}[h] %h,t,b,p
+\centering
+\begin{tabular}{|l|c|r|c|}
+\hline
+\multirow{2}{*}{A} & \multicolumn{3}{c|}{Timeslot} \\
+\cline{2-4}
+ & D & & \\
+\hline
+ jabi & \multicolumn{2}{c}{\multirow{2}{*}{Thesis}} & habi \\
+\cline{4-4}
+h & \multicolumn{2}{c}{} & i\\
+\end{tabular}
+\caption{A table for practice}
+\label{table}
+\end{table}
+
+\end{document}

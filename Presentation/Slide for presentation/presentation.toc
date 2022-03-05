@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Introduction to Safe labeling and Minimum Span}{3}{0}{1}
+\beamer@sectionintoc {2}{Hardness of Safe Labeling Problem}{13}{0}{2}
+\beamer@sectionintoc {3}{k-safe Labeling of Bipartite Graphs}{19}{0}{3}
+\beamer@sectionintoc {4}{k-safe Labeling of Trees}{33}{0}{4}
+\beamer@sectionintoc {5}{k-safe Labeling of Cycles}{36}{0}{5}
+\beamer@sectionintoc {6}{k-safe Labeling of Cactus Graphs}{53}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{91}{0}{7}

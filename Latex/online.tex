@@ -1,0 +1,53 @@
+\documentclass[letter, 12pt]{article}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{enumerate}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{amsmath}
+ \renewcommand{\labelenumii}{\Roman{enumii}}
+
+\author{1605042}
+\date{\today}
+\title{CSE 300 Online 1}
+\begin{document}
+	\maketitle 
+	\tableofcontents
+\section{Introduction}
+This is the first online practice on \LaTeX.\\
+We will do some styling in \ref{sec:col}.
+\section{Styling}
+This is \textbf{\textcolor{red}{bold}}. This is \textit{\textcolor{blue}{italic}} \& so on.
+\label{sec:col}
+\section*{Use of special characters}
+You can use special characters by preceding with \verb|\|.
+Another package can be
+used named as verbatim. Example: \verb|~!$#\@*^|.
+\section{List}
+There are 3 kinds of list.
+\begin{enumerate}[i]
+	\item Un-ordered
+	\item Ordered
+	\item Description
+\end{enumerate}
+Let’s see an example of lists:
+\begin{description}
+	\item[CSE 311] {Data Communication I \begin{itemize}
+			\item Fourier
+			\item[] ADC
+		\end{itemize}}
+	\item [CSE 305] {Computer Architecture \begin{enumerate}
+			\item MIPS \begin{enumerate}[(a)]
+				\item \textit{commands}
+				\item \textit{pipeline}
+			\end{enumerate}
+			\item Shared memory
+		\end{enumerate}}}
+		\item[CSE 309] {Compiler}
+\end{description}
+\section{Table}
+
+\end{document}
